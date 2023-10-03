@@ -1,0 +1,104 @@
+/* Basic styling for the layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helveticas, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 23%;
+    overflow-y:visible;
+}
+
+#navbar header {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 12px;
+}
+
+#navbar ul li {
+    padding: 4px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgba(255,255,255, 0.75);
+    transition: all 0.2s;
+}
+
+#navbar ul li a:hover {
+    color: rgba(255,255,255, 1);
+}
+
+#navbar ul li a.active {
+    color: #ffffff;
+    background-color: rgb(240, 248, 255, 0.3);
+    border-radius: 0.5rem;
+    
+    transition: all 0.2s;
+}
+
+#main-doc {
+    margin-left: 23%; /* Adjust this value based on your navbar width */
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.main-section {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.header {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-weight:500;
+}
+
+section p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+section ul {
+    padding-left: 3rem;
+}
+
+section code {
+    background-color: aliceblue;
+    padding: 0.5rem;
+    margin-inline-start: 3rem;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
